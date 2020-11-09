@@ -1,30 +1,42 @@
 # pip install -r .\requirements.txt
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_restful import Api, Resource
 
 from vector import sim
 from text import clean_text, create_freq_count, count_freq
-from files import file_to_string
+from files import file_to_string, get_filenames, Document
 
 app = Flask(__name__)
 api = Api(app)
 
-
-class Document(Resource):
-    def get(self):
-        return {"data": "hellowrodl"}
-
-    def post(self):
-        data = request.get_json()
-        print(data)
-        return data
+# Routes
 
 
-api.add_resource(Document, "/doc")
+@app.route("/docs_title", methods=["GET"])
+def get_documents_title():
+
+    return jsonify({"titles": [Document(filename).title for filename in get_filenames()]})
 
 
+@app.route("/doc/<string:filename>", methods=["GET"])
+def get_document(filename):
+
+    doc = Document(filename)
+
+    return jsonify(
+        {"doc":
+            {
+                "title": doc.title,
+                "content": doc.content
+            }
+         })
+
+    # Run server
+
+
+PORT = 5000
 if __name__ == "__main__":
-    app.run(host="localhost", port=5000, debug=True)
+    app.run(host="localhost", port=PORT, debug=True)
 
 # d1 = file_to_string(".\\dokumen\\dokumen1.txt")
 
