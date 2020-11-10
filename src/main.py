@@ -38,6 +38,9 @@ def search_documents():
         doc["similarity"] = sim(dict_to_vector(
             res["query"]["term_freq"]), dict_to_vector(doc["term_freq"]))
 
+    res["docs"] = sorted(
+        res["docs"], key=lambda k: k["similarity"], reverse=True)
+
     return jsonify(res)
 
 
