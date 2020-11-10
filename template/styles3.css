@@ -69,6 +69,10 @@ textarea:focus, input:focus{
     outline: none;
 }
 
+.demo-anchor {
+    text-decoration: none;
+}
+
 .footer {
     font-size: 10pt;
     text-align: center;
