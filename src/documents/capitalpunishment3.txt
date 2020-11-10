@@ -1,0 +1,3 @@
+Prison Conditions, Capital Punishment, and Deterrence.
+
+Previous research has attempted to identify a deterrent effect of capital punishment. We argue that the quality of life in prison is likely to have a greater impact on criminal behavior than the death penalty. Using state-level panel data covering the period 1950–90, we demonstrate that the death rate among prisoners (the best available proxy for prison conditions) is negatively correlated with crime rates, consistent with deterrence. This finding is shown to be quite robust. In contrast, there is little systematic evidence that the execution rate influences crime rates in this time period.
