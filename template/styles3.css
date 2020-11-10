@@ -7,29 +7,29 @@ body {
 }
 
 .navbar {
-    font-size: 7pt;
+    font-size: 12pt;
     font-weight: 400;
-    padding-bottom: 110px;
+    padding-bottom: 280px;
     display: flex;
     justify-content: flex-end;
 }
 
 .options {
-    height: 15px;
-    padding: 5px;
+    height: 25px;
+    padding: 10px;
 }
 
 .profile {
-    height: 17px;
-    padding: 5px;
+    height: 27px;
+    padding: 10px;
 }
 
 .pinkmail {
-    padding: 5px;
+    padding: 10px;
 }
 
 .pimages {
-    padding: 5px;
+    padding: 10px;
 }
 
 .logo-center {
@@ -48,15 +48,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 20%;
-    height: 15px;
+    height: 20px;
     font-family: Lato;
-    font-size: 8px;
+    font-size: 10pt;
     font-weight: 400;
     color: #ff7b88;
     border: 0;
     border-radius: 4px;
     box-shadow: 2px 2px 0 #ff7b88;
-    padding-left: 7px;
+    padding-left: 10px;
+    padding-bottom: 2px;
 }
 
 ::placeholder {
@@ -69,8 +70,8 @@ textarea:focus, input:focus{
 }
 
 .footer {
-    font-size: 6pt;
+    font-size: 10pt;
     text-align: center;
     font-weight: 400;
-    padding-top: 130pt;
+    padding-top: 250pt;
 }
