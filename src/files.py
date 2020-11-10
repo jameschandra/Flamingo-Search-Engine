@@ -1,7 +1,7 @@
 import os
 
 CURRENT_PATH = os.path.dirname(__file__)
-DOCUMENT_DIRECTORY = "documents"
+DOCUMENT_DIRECTORY = "documents_test"
 
 
 def file_to_string(file_path):
@@ -23,6 +23,8 @@ class Document:
         self.title = (filename.split("."))[0]
         self.content = file_to_string(
             f".\\{DOCUMENT_DIRECTORY}\\{self.filename}")
+        self.term_freq = {}
+        self.similarity = 0
 
 
 # files = get_filenames()

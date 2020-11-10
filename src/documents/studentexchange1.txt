@@ -1,3 +1,3 @@
-Are student exchange programs worth it?
+Are student exchange programs worth it.
 
 The number of university students participating in exchange programs has risen sharply over the last decade. A survey of Swiss university graduates (classes of 1999 and 2001) shows that participation in student exchange programs depends significantly on the socio-economic background of students. We further analyze whether the participants benefit from additional advantages caused by these exchange programs. Analyses show that student exchange programs are associated with higher starting salaries and a higher likelihood of opting for postgraduate degrees. Analyses using instrumental variable estimations (IV), however, show that these outcomes are not causally related to participation in exchange programs.

@@ -47,10 +47,40 @@ def count_freq(words, dic):
     return dic
 
 
-def dic_to_vector(dic):
+def term_freq(docs):
+    result = [{} for doc in docs]
+    for i in range(len(result)):
+        words = clean_text(docs[i])
+        for word in words:
+            for j in range(len(result)):
+                if j == i:
+                    if word not in result[j]:
+                        result[j][word] = 1
+                    else:
+                        result[j][word] += 1
+                else:
+                    if word not in result[j]:
+                        result[j][word] = 0
+
+    return result
+
+
+def dict_to_vector(dic):
     vector = [dic[k] for k in dic.keys()]
     return vector
 
+
+# doc1 = "Test test one one two"
+# doc2 = "Test one three four five"
+# doc3 = "four five one two nine"
+
+# docs = [doc1, doc2, doc3]
+
+# term_freq = term_freq_docs(docs)
+
+# print(term_freq)
+
+# print(clean_text(str(doc1)))
 
 # ct1 = clean_text(text1)
 
