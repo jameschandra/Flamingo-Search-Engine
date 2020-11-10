@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import axios from "axios";
 
 function App() {
+  const [query, SetQuery] = useState("");
+  const [data, setData] = useState({});
+
+  const handleSearch = () => {
+    console.log(query);
+    axios
+      .post("http://localhost:5000/search", {
+        query: query,
+      })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((e) => console.log(e));
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input value={query} onChange={(e) => SetQuery(e.target.value)} />
+      <button onClick={handleSearch}>Search</button>
     </div>
   );
 }
