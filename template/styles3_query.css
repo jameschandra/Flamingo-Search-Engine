@@ -1,6 +1,6 @@
 body {
     font-family: Lato;
-    background-image: url("background.png");
+    background-image: url("background-long.png");
     background-size: 100%;
     background-color:#fff8f8;
     color: #ff7b88;
@@ -75,6 +75,7 @@ textarea:focus, input:focus{
 
 .query {
     margin-left: 375px;
+    padding-bottom: 50px;
 }
 
 .list-thing {
@@ -88,6 +89,10 @@ textarea:focus, input:focus{
     font-size: x-large;
 }
 
+.anchor-document {
+    color: #ff7b88;
+}
+
 .description{
     padding-top:8px;
     font-size: 12pt;
@@ -99,4 +104,35 @@ textarea:focus, input:focus{
     font-size: 12pt;
     font-weight: 400;
     font-style: italic;
+}
+
+.tablesss {
+    margin-left: 385px;
+    padding-bottom: 100px;
+}
+
+table, th, td {
+    border: 2px solid #ff7b88; 
+    border-collapse: collapse;
+    color: #ff5162;
+}
+
+th {
+    width: 30px;
+}
+
+.termtable {
+    width: 100px;
+}
+
+.footer {
+    font-size: 10pt;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.perihal-anchor {
+    color: #ff7b88;
 }
