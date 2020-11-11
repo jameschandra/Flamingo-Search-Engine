@@ -1,0 +1,138 @@
+body {
+    font-family: Lato;
+    background-image: url("background-long.png");
+    background-size: 100%;
+    background-color:#fff8f8;
+    color: #ff7b88;
+}
+
+.navbar {
+    font-size: 12pt;
+    font-weight: 400;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.options {
+    height: 25px;
+    padding: 10px;
+}
+
+.profile {
+    height: 27px;
+    padding: 10px;
+}
+
+.pinkmail {
+    padding: 10px;
+}
+
+.pimages {
+    padding: 10px;
+}
+
+.search-logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 200px;
+}
+
+.logo-center {
+    width: 150px;
+    padding: 20px;
+}
+
+.search-bar {
+    padding: 25px;
+}
+
+.search-center {
+    background-color: #ffffff;
+    transform: scale(1.5);
+    margin-left: 100px;
+    width: 450px;
+    height: 20px;
+    font-family: Lato;
+    font-size: 10pt;
+    font-weight: 400;
+    color: #ff7b88;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 #ff7b88;
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+
+::placeholder {
+    color: #ff7b88;
+    opacity: 1;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.query {
+    margin-left: 219px;
+    padding-bottom: 50px;
+}
+
+.list-thing {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.document {
+    padding-top: 28px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.anchor-document {
+    color: #ff7b88;
+}
+
+.description{
+    padding-top:8px;
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.sample {
+    padding-top:20px;
+    font-size: 12pt;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tablesss {
+    margin-left: 385px;
+    padding-bottom: 100px;
+}
+
+table, th, td {
+    border: 2px solid #ff7b88; 
+    border-collapse: collapse;
+    color: #ff5162;
+}
+
+th {
+    width: 30px;
+}
+
+.termtable {
+    width: 100px;
+}
+
+.footer {
+    font-size: 10pt;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.perihal-anchor {
+    color: #ff7b88;
+}

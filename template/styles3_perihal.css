@@ -1,0 +1,82 @@
+body {
+    font-family: Lato;
+    background-image: url("background.png");
+    background-size: 100%;
+    background-color:#fff8f8;
+    color: #ff7b88;
+}
+
+.navbar {
+    font-size: 12pt;
+    font-weight: 400;
+    padding-bottom: 115px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.options {
+    height: 25px;
+    padding: 10px;;
+}
+
+.profile {
+    height: 27px;
+    padding: 10px;
+}
+
+.pinkmail {
+    padding: 10px;
+}
+
+.pimages {
+    padding: 10px;
+}
+
+.logo-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 20px;
+    padding-bottom: 60px;
+    clear: both;
+}
+
+.row {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.head {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    font-size: 10pt;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 148px;
+    padding-bottom: 40px;
+}
+
+.perihal-anchor {
+    color: #ff7b88;
+}
