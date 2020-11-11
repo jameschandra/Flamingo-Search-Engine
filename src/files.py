@@ -1,5 +1,7 @@
 import os
 
+from text import clean_text
+
 CURRENT_PATH = os.path.dirname(__file__)
 DOCUMENT_DIRECTORY = "documents_test"
 
@@ -25,6 +27,7 @@ class Document:
             f".\\{DOCUMENT_DIRECTORY}\\{self.filename}")
         self.term_freq = {}
         self.similarity = 0
+        self.length = len(clean_text(self.content))
 
 
 # files = get_filenames()
