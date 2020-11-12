@@ -88,15 +88,15 @@ textarea:focus, input:focus{
     left: 0;
     fill: #ffdcdf;
     margin: -9cm;
-    width: 50vmax;
+    width: 35vmax;
     z-index: -1;
-    animation: move 60s ease-in-out infinite;
+    animation: move 45s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
   
   @keyframes move {
     0%   { transform: scale(1)   translate(10px, -30px); }
-    33.4%  { transform: scale(0.8, 1) translate(100vw, 30vh) rotate(-80deg); }
-    66.7%  { transform: scale(0.6,1) translate(0vw, 80vh) rotate(-160deg);}
+    33.4%  { transform: scale(0.8, 1) translate(120vw, 30vh) rotate(-160deg); }
+    66.7%  { transform: scale(0.6,1) translate(0vw, 80vh) rotate(-320deg);}
     100% { transform: scale(1)   translate(10px, -30px); }
   }
