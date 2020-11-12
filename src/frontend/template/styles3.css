@@ -83,12 +83,12 @@ textarea:focus, input:focus{
 }
 
 .blob {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     fill: #ffdcdf;
     margin: -9cm;
-    width: 35vmax;
+    width: 30cm;
     z-index: -1;
     animation: move 45s ease-in-out infinite;
     transform-origin: 50% 50%;
