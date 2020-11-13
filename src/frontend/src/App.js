@@ -1,26 +1,23 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import DocDetail from "./pages/DocDetail";
+import DocSearch from "./pages/DocSearch";
 
 function App() {
-  const [query, SetQuery] = useState("");
-  const [data, setData] = useState({});
-
-  const handleSearch = () => {
-    console.log(query);
-    axios
-      .post("http://localhost:5000/search", {
-        query: query,
-      })
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((e) => console.log(e));
-  };
-
   return (
-    <div className="App">
-      <input value={query} onChange={(e) => SetQuery(e.target.value)} />
-      <button onClick={handleSearch}>Search</button>
+    <div>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path={"/"} component={DocSearch} />
+          <Route path={"/doc/:filename"} component={DocDetail} />
+          <Route path={"/about"} component={About} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }
