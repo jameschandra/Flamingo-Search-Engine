@@ -3,14 +3,14 @@ import os
 from text import clean_text
 
 CURRENT_PATH = os.path.dirname(__file__)
-DOCUMENT_DIRECTORY = "documents_test"
+DOCUMENT_DIRECTORY = "documents"
 
 
 def file_to_string(file_path):
     data = ""
     exact_path = os.path.relpath(file_path, CURRENT_PATH)
-    with open(exact_path, "r") as file:
-        data = file.read()  # . replace("\n", " ")
+    with open(exact_path, "r", encoding="utf8") as file:
+        data = file.read().replace("\n", " ")
 
     return data
 
