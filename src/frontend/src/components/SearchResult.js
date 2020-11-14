@@ -140,7 +140,7 @@ const SearchResult = (props) => {
           }
 
           .upload-bar {
-            margin: 1em 6em 0;
+            margin: 1em 20em 0;
           }
 
           .query {
