@@ -20,7 +20,6 @@ const Navbar = () => {
           .navbar {
             font-size: 12pt;
             font-weight: 400;
-            padding-bottom: 40vh;
             display: flex;
             justify-content: flex-end;
           }

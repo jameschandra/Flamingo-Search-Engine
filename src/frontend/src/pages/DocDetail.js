@@ -28,7 +28,7 @@ const DocDetail = () => {
       <div className="search-logo">
         <div className="logo">
           <Link to="/">
-            <img src={logo} alt="logo" classNameName="logo-center" />
+            <img src={logo} alt="logo" className="logo-center" />
           </Link>
         </div>
       </div>
@@ -40,75 +40,29 @@ const DocDetail = () => {
         {`
           .search-logo {
             display: flex;
-            justify-content: flex-start;
-            margin-left: 200px;
+            align-items: center;
+            margin: 1em 6em 0;
           }
 
           .logo-center {
-            width: 150px;
-            padding: 20px;
-          }
-
-          .search-bar {
-            padding: 25px;
-          }
-
-          .search-center {
-            background-color: #ffffff;
-            transform: scale(1.5);
-            margin-left: 100px;
-            width: 450px;
-            height: 20px;
-            font-family: Lato;
-            font-size: 10pt;
-            font-weight: 400;
-            color: #ff7b88;
-            border: 0;
-            border-radius: 4px;
-            box-shadow: 2px 2px 0 #ff7b88;
-            padding-left: 10px;
-            padding-bottom: 2px;
-          }
-
-          ::placeholder {
-            color: #ff7b88;
-            opacity: 1;
-          }
-
-          textarea:focus,
-          input:focus {
-            outline: none;
+            width: 12.5em;
           }
 
           .query {
-            margin-left: 219px;
+            margin-left: 6em;
             padding-bottom: 50px;
-          }
-
-          .list-thing {
-            font-size: x-large;
-            font-weight: bolder;
+            width: 50%;
           }
 
           .document {
-            padding-top: 28px;
+            padding-top: 1.5em;
             font-weight: bold;
             font-size: x-large;
           }
 
-          .anchor-document {
-            color: #ff7b88;
-          }
-
-          .description {
-            padding-top: 8px;
-            font-size: 12pt;
-            font-weight: 400;
-          }
-
           .sample {
-            padding-top: 20px;
-            font-size: 12pt;
+            padding-top: 1.5em;
+            font-size: 1.2em;
             font-weight: 400;
             font-style: italic;
           }

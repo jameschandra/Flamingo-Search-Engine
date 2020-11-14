@@ -22,7 +22,7 @@ const Footer = () => {
             font-size: 10pt;
             text-align: center;
             font-weight: 400;
-            padding-top: 250pt;
+            padding-top: 25vh;
           }
 
           .perihal-anchor {

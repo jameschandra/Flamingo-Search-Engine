@@ -54,24 +54,24 @@ const About = () => {
       </div>
       <style jsx>
         {`
+          .logo {
+            margin-top: 6em;
+            display: flex;
+            justify-content: center;
+          }
+
           .logo-center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 30%;
-            padding: 20px;
-            padding-bottom: 60px;
-            clear: both;
+            width: 30vw;
           }
 
           .row {
             width: 60%;
             margin-left: auto;
             margin-right: auto;
+            display: flex;
           }
 
           .column {
-            float: left;
             width: 33.33%;
           }
 
@@ -81,14 +81,7 @@ const About = () => {
 
           .content {
             text-align: center;
-            padding-left: 20px;
-            padding-right: 20px;
-          }
-
-          .row:after {
-            content: "";
-            display: table;
-            clear: both;
+            padding: 1em 1.5em;
           }
         `}
       </style>

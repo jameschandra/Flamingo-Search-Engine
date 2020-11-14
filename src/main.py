@@ -1,14 +1,17 @@
 # pip install -r .\requirements.txt
 import json
+import os
 from flask import Flask, request, jsonify
 from flask_restful import Api, Resource
 from flask_cors import CORS
+from werkzeug.utils import secure_filename
 
 from vector import sim
 from text import clean_text, create_freq_count, count_freq, term_freq, dict_to_vector
-from files import file_to_string, get_filenames, Document
+from files import file_to_string, get_filenames, Document, DOCUMENT_DIRECTORY
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = DOCUMENT_DIRECTORY
 CORS(app)
 
 
@@ -18,6 +21,7 @@ CORS(app)
 def search_documents():
 
     query = request.get_json()["query"]
+    print(query)
 
     res = {
         "docs": [Document(filename).__dict__ for filename in get_filenames()],
@@ -59,7 +63,18 @@ def get_document(filename):
          })
 
 
+@app.route("/upload-file", methods=["POST"])
+def upload_file():
+    file = request.files['file']
+    filename = secure_filename(file.filename)
+    file.save(os.path.join(app.config["UPLOAD_FOLDER"], filename))
+
+    return jsonify({'message': 'File uploaded succesfully'})
+# source https://roytuts.com/python-flask-rest-api-file-upload/
+
+
 # Run server
+
 
 PORT = 5000
 if __name__ == "__main__":

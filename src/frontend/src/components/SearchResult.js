@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../img/logo.png";
+import FileUpload from "./FileUpload";
 
 const SearchResult = (props) => {
   const { query, setQuery, data, handleSearch } = props.utils;
@@ -33,7 +34,10 @@ const SearchResult = (props) => {
           />
           <button onClick={handleSearch}>Search</button>
         </div>
-        <button onClick={handleSearch}>Search</button>
+      </div>
+
+      <div className="upload-bar">
+        <FileUpload fontSize={"1.2em"} padding={".25em .5em"} />
       </div>
 
       <div className="query">
@@ -87,34 +91,43 @@ const SearchResult = (props) => {
         {`
           .search-logo {
             display: flex;
-            justify-content: flex-start;
-            margin-left: 200px;
+            align-items: center;
+            margin: 1em 6em 0;
           }
 
           .logo-center {
-            width: 150px;
-            padding: 20px;
+            width: 12.5em;
           }
 
           .search-bar {
-            padding: 25px;
+            width: 100%;
+            margin: 0 1em;
           }
 
           .search-center {
-            background-color: #ffffff;
-            transform: scale(1.5);
-            margin-left: 100px;
-            width: 450px;
-            height: 20px;
+            width: 70%;
+            background-color: white;
             font-family: Lato;
-            font-size: 10pt;
+            font-size: 1em;
             font-weight: 400;
             color: #ff7b88;
             border: 0;
             border-radius: 4px;
             box-shadow: 2px 2px 0 #ff7b88;
-            padding-left: 10px;
-            padding-bottom: 2px;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+          }
+
+          .search-bar button {
+            margin: 0 0.5em;
+            font-family: Lato;
+            font-size: 1em;
+            color: white;
+            background: #ff7b88;
+            border: 0;
+            border-radius: 4px;
+            box-shadow: 2px 2px 0 #ff7b88;
+            padding: 0.5em 1em;
           }
 
           ::placeholder {
@@ -127,9 +140,13 @@ const SearchResult = (props) => {
             outline: none;
           }
 
+          .upload-bar {
+            margin: 1em 10em 0;
+          }
+
           .query {
-            margin-left: 375px;
-            padding-bottom: 50px;
+            margin-left: 20em;
+            width: 60%;
           }
 
           .list-thing {
@@ -138,7 +155,7 @@ const SearchResult = (props) => {
           }
 
           .document {
-            padding-top: 28px;
+            padding-top: 1.5em;
             font-weight: bold;
             font-size: x-large;
           }
@@ -148,21 +165,20 @@ const SearchResult = (props) => {
           }
 
           .description {
-            padding-top: 8px;
-            font-size: 12pt;
+            padding-top: 0.2em;
+            font-size: 0.8em;
             font-weight: 400;
           }
 
           .sample {
-            padding-top: 5px;
-            font-size: 12pt;
+            padding-top: 0.2em;
+            font-size: 0.8em;
             font-weight: 400;
             font-style: italic;
           }
 
           .tablesss {
-            margin-left: 385px;
-            padding-bottom: 100px;
+            margin-left: 20em;
           }
 
           table,
@@ -179,18 +195,6 @@ const SearchResult = (props) => {
 
           .termtable {
             width: 100px;
-          }
-
-          .footer {
-            font-size: 10pt;
-            text-align: center;
-            font-weight: 400;
-            padding-top: 120px;
-            padding-bottom: 40px;
-          }
-
-          .perihal-anchor {
-            color: #ff7b88;
           }
         `}
       </style>

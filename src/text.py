@@ -14,6 +14,7 @@ from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFacto
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 import string
+import re
 
 factory_stopwrods = StopWordRemoverFactory()
 stopwords = factory_stopwrods.get_stop_words()
@@ -41,6 +42,9 @@ def clean_text(text):
 
     return words
 
+
+# def get_first_sentence(text):
+#     return re.split('? ! ')
 
 def create_freq_count(words):
     freq_count = {}

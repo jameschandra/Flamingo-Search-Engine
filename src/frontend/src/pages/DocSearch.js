@@ -3,6 +3,7 @@ import axios from "axios";
 import logo from "../img/logo.png";
 import SearchResult from "../components/SearchResult";
 import { Link } from "react-router-dom";
+import FileUpload from "../components/FileUpload";
 
 const DocSearch = () => {
   const [query, setQuery] = useState("");
@@ -44,6 +45,9 @@ const DocSearch = () => {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
+      <div className="upload-bar">
+        <FileUpload fontSize={"1.2em"} padding={"0.5em 1em"} />
+      </div>
       <style jsx>
         {`
           .logo-center {
@@ -52,26 +56,38 @@ const DocSearch = () => {
             margin-right: auto;
             width: 25%;
             padding: 20px;
+            padding-top: 25vh;
             clear: both;
+          }
+
+          .search-bar {
+            display: flex;
+            justify-content: center;
           }
 
           .search-center {
             background-color: white;
-            transform: scale(1.5);
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 20%;
-            height: 20px;
+            width: 30%;
             font-family: Lato;
-            font-size: 10pt;
+            font-size: 1.5em;
             font-weight: 400;
             color: #ff7b88;
             border: 0;
             border-radius: 4px;
             box-shadow: 2px 2px 0 #ff7b88;
-            padding-left: 10px;
-            padding-bottom: 2px;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+          }
+
+          .search-bar button {
+            margin: 0 0.5em;
+            font-family: Lato;
+            font-size: 1em;
+            color: white;
+            background: #ff7b88;
+            border: 0;
+            border-radius: 4px;
+            box-shadow: 2px 2px 0 #ff7b88;
           }
 
           ::placeholder {
@@ -82,6 +98,12 @@ const DocSearch = () => {
           textarea:focus,
           input:focus {
             outline: none;
+          }
+
+          .upload-bar {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5em;
           }
         `}
       </style>
