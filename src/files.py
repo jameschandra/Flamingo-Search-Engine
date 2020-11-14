@@ -3,7 +3,7 @@ import os
 from text import clean_text, get_first_sentence
 
 CURRENT_PATH = os.path.dirname(__file__)
-DOCUMENT_DIRECTORY = "documents_test"
+DOCUMENT_DIRECTORY = "documents"
 # ALLOWED_EXTENSIONS = ['txt', 'html']
 
 
