@@ -1,6 +1,6 @@
 import os
 
-from text import clean_text
+from text import clean_text, get_first_sentence
 
 CURRENT_PATH = os.path.dirname(__file__)
 DOCUMENT_DIRECTORY = "documents_test"
@@ -34,7 +34,7 @@ class Document:
         self.term_freq = {}
         self.similarity = 0
         self.length = len(clean_text(self.content))
-        # self.first_sentence =
+        self.first_sentence = get_first_sentence(self.content)
 
 
 # files = get_filenames()

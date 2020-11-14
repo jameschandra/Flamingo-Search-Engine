@@ -55,8 +55,7 @@ const SearchResult = (props) => {
                 Tingkat Kemiripan: {doc.similarity * 100}%
               </div>
               <div className="sample">
-                "Lorem Ipsum Dolor Sit Amet? Lorem Ipsum Dolor Sit Amet? Lorem
-                Ipsum Dolor Sit Amet?
+                {doc.first_sentence}
                 <br />
               </div>
             </li>
@@ -141,7 +140,7 @@ const SearchResult = (props) => {
           }
 
           .upload-bar {
-            margin: 1em 10em 0;
+            margin: 1em 6em 0;
           }
 
           .query {

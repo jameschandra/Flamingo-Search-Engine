@@ -43,8 +43,16 @@ def clean_text(text):
     return words
 
 
-# def get_first_sentence(text):
-#     return re.split('? ! ')
+def get_first_sentence(text):
+    firstsentence = ""
+    i = 0
+    while(text[i] not in [".", "!", "?"]):
+        firstsentence += text[i]
+        i += 1
+    firstsentence += text[i]
+
+    return firstsentence
+
 
 def create_freq_count(words):
     freq_count = {}
