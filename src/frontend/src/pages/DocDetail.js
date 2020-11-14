@@ -40,8 +40,7 @@ const DocDetail = () => {
         {`
           .search-logo {
             display: flex;
-            align-items: center;
-            margin: 1em 6em 0;
+            justify-content: center;
           }
 
           .logo-center {
@@ -49,9 +48,11 @@ const DocDetail = () => {
           }
 
           .query {
-            margin-left: 6em;
-            padding-bottom: 50px;
-            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
           }
 
           .document {
@@ -65,6 +66,8 @@ const DocDetail = () => {
             font-size: 1.2em;
             font-weight: 400;
             font-style: italic;
+            width: 50%;
+            text-align: justify;
           }
         `}
       </style>
