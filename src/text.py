@@ -1,14 +1,25 @@
-import nltk
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
-from nltk.tokenize import word_tokenize
+# import nltk
+# from nltk.corpus import stopwords
+# from nltk.stem import PorterStemmer
+# from nltk.tokenize import word_tokenize
+
+# nltk.download('punkt')
+# nltk.download('stopwords')
+
+# ps = PorterStemmer()
+# stop_words = set(stopwords.words("english"))
+
+
+from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+
 import string
 
-nltk.download('punkt')
-nltk.download('stopwords')
+factory_stopwrods = StopWordRemoverFactory()
+stopwords = factory_stopwrods.get_stop_words()
 
-ps = PorterStemmer()
-stop_words = set(stopwords.words("english"))
+factory_stemmer = StemmerFactory()
+stemmer = factory_stemmer.create_stemmer()
 
 
 def clean_text(text):
@@ -19,13 +30,14 @@ def clean_text(text):
 
     text = " ".join(text.split())
 
-    words = word_tokenize(text)
+    words = text.split()
+    # words = word_tokenize(text)
 
     # removing stopwords
-    words = [word for word in words if word not in stop_words]
+    words = [word for word in words if word not in stopwords]
 
     # stemming word in query
-    words = [ps.stem(word) for word in words]
+    words = [stemmer.stem(word) for word in words]
 
     return words
 
