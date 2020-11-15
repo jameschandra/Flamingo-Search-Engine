@@ -1,20 +1,7 @@
-# import nltk
-# from nltk.corpus import stopwords
-# from nltk.stem import PorterStemmer
-# from nltk.tokenize import word_tokenize
-
-# nltk.download('punkt')
-# nltk.download('stopwords')
-
-# ps = PorterStemmer()
-# stop_words = set(stopwords.words("english"))
-
-
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 import string
-import re
 
 factory_stopwrods = StopWordRemoverFactory()
 stopwords = factory_stopwrods.get_stop_words()
@@ -29,10 +16,11 @@ def clean_text(text):
     for c in string.punctuation:
         text = text.replace(c, "")
 
+    # removing excessive whitespace
     text = " ".join(text.split())
 
+    # text to array of word
     words = text.split()
-    # words = word_tokenize(text)
 
     # removing stopwords
     words = [word for word in words if word not in stopwords]
@@ -92,28 +80,3 @@ def term_freq(docs):
 def dict_to_vector(dic):
     vector = [dic[k] for k in dic.keys()]
     return vector
-
-
-# doc1 = "Test test one one two"
-# doc2 = "Test one three four five"
-# doc3 = "four five one two nine"
-
-# docs = [doc1, doc2, doc3]
-
-# term_freq = term_freq_docs(docs)
-
-# print(term_freq)
-
-# print(clean_text(str(doc1)))
-
-# ct1 = clean_text(text1)
-
-# v = create_freq_count(ct1)
-
-# d1 = count_freq(ct1, v)
-
-# v1 = dic_to_vector(d1)
-
-# print(d1)
-
-# print(v1)

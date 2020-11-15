@@ -3,8 +3,7 @@ import os
 from text import clean_text, get_first_sentence
 
 CURRENT_PATH = os.path.dirname(__file__)
-DOCUMENT_DIRECTORY = "documents"
-# ALLOWED_EXTENSIONS = ['txt', 'html']
+DOCUMENT_DIRECTORY = "../test"
 
 
 def file_to_string(file_path):
@@ -20,11 +19,6 @@ def get_filenames():
     return os.listdir(DOCUMENT_DIRECTORY)
 
 
-# def allowed_file(filename):
-#     return ('.' in filename) and (filename.split('.')[1] in ALLOWED_EXTENSIONS)
-# # source https://roytuts.com/python-flask-rest-api-file-upload/
-
-
 class Document:
     def __init__(self, filename):
         self.filename = filename
@@ -35,18 +29,3 @@ class Document:
         self.similarity = 0
         self.length = len(clean_text(self.content))
         self.first_sentence = get_first_sentence(self.content)
-
-
-# files = get_filenames()
-# documents = []
-
-# for filename in files:
-#     documents.append(Document(filename))
-
-# print(documents[0].content)
-
-# for document in documents:
-#     print(f"Filename = {document.filename}")
-#     print(f"Title = {document.title}")
-
-#     print()

@@ -1,8 +1,6 @@
-# pip install -r .\requirements.txt
 import json
 import os
 from flask import Flask, request, jsonify
-from flask_restful import Api, Resource
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
@@ -17,7 +15,7 @@ CORS(app)
 
 # Routes
 
-@app.route("/search", methods=["POST"])  # method = POST
+@app.route("/search", methods=["POST"])
 def search_documents():
 
     query = request.get_json()["query"]
@@ -79,17 +77,3 @@ def upload_file():
 PORT = 5000
 if __name__ == "__main__":
     app.run(host="localhost", port=PORT, debug=True)
-
-# d1 = file_to_string(".\\dokumen\\dokumen1.txt")
-
-# t1 = "   Hello            test test one two    one    "
-
-# print(clean_text(d1))
-
-# d1 = [2, 3, 5]
-# d2 = [3, 7, 1]
-# q = [0, 0, 2]
-
-
-# print(sim(q, d1))
-# print(sim(q, d2))
