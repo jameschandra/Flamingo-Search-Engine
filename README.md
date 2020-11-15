@@ -1,7 +1,5 @@
-# Algeo02-19078
-
-# Project Name
-> Here goes your awesome project description!
+# Flamingo
+> Flamingo adalah search engine yang mengguakan metode cosine similarity untuk melakukan temu balik informasi. 
 
 ## Table of contents
 * [General info](#general-info)
@@ -13,6 +11,11 @@
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
+## Team Member
+1. 13519078 - James Chandra
+2. 13519087 - Hizkia Raditya Pratama Roosadi
+3. 13519108 - Nathaniel Jason
+
 ## General info
 Add more general information about project. What the purpose of the project is? Motivation?
 
@@ -20,9 +23,20 @@ Add more general information about project. What the purpose of the project is? 
 ![Example screenshot](./img/screenshot.png)
 
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+### Backend
+1. Python 3.6.5
+2. Flask 1.1.2
+3. Flask-RESTful 0.3.8
+4. Flask-CORS 3.0.9
+5. Sastrawi 1.0.1
+
+### Frontend
+1. react 17.0.1
+2. react-dom 17.0.1
+3. react-router-dom 5.2.6
+4. react-scripts 4.0.0
+5. axios 0.21.0
+6. web-vitals 0.2.4
 
 ## Setup
 
@@ -43,27 +57,21 @@ Add more general information about project. What the purpose of the project is? 
 1. open browser
 2. go to localhost:3000/
 
+
 ## Code Examples
 Show examples of usage:
 `put-your-code-here`
 
 ## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+1. Bisa mencari kata dari input pengguna pada dokumen
+2. Mengupload file dokumen yang kemudian dapat digunakkan sebagai dokumen yang akan dicari
 
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
-
-## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
 
 ## Inspiration
-Add here credits. Project inspired by..., based on...
+masukkin sumber disini
 
-## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+
+
+
 
 
