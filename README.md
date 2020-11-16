@@ -20,9 +20,16 @@
 Add more general information about project. What the purpose of the project is? Motivation?
 
 ## Screenshots
+### Home Page
 ![home](./src/img/home.jpg)
+
+### Search Result
 ![search_result](./src/img/search_result.jpg)
+
+### Term Table Result
 ![term_table](./src/img/term_table.jpg)
+
+### About Page
 ![about](./src/img/about.jpg)
 
 ## Technologies
