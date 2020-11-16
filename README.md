@@ -65,10 +65,6 @@
 2. go to localhost:3000/
 
 
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
-
 ## Features
 1. Bisa mencari kata dari input pengguna pada dokumen
 2. Mengupload file dokumen yang kemudian dapat digunakkan sebagai dokumen yang akan dicari
