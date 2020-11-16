@@ -20,7 +20,9 @@
 Add more general information about project. What the purpose of the project is? Motivation?
 
 ## Screenshots
-![Example screenshot](./src/img/home.jpg)
+!(./src/img/home.jpg)
+!(./src/img/search_result.jpg)
+!(./src/img/term_table.jpg)
 
 ## Technologies
 ### Backend
