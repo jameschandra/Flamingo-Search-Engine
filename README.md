@@ -3,7 +3,6 @@
 
 ## Table of contents
 * [Team Member](#team-member)
-* [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
@@ -15,8 +14,6 @@
 2. 13519087 - Hizkia Raditya Pratama Roosadi
 3. 13519108 - Nathaniel Jason
 
-## General info
-Add more general information about project. What the purpose of the project is? Motivation?
 
 ## Screenshots
 ### Home Page
