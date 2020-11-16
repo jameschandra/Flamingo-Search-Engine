@@ -76,8 +76,6 @@ Show examples of usage:
 2. Mengupload file dokumen yang kemudian dapat digunakkan sebagai dokumen yang akan dicari
 
 
-## Inspiration
-masukkin sumber disini
 
 
 
