@@ -2,14 +2,13 @@
 > Flamingo adalah search engine yang mengguakan metode cosine similarity untuk melakukan temu balik informasi. 
 
 ## Table of contents
+* [Team Member](#team-member)
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+
 
 ## Team Member
 1. 13519078 - James Chandra
