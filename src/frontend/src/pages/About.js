@@ -15,29 +15,29 @@ const About = () => {
         <div className="column">
           <h2 className="head">Konsep Singkat</h2>
           <p className="content">
-            Search engine kami dibuat dengan cara lorem ipsum dolor sit amet,
-            mengikuti lorem ipsum dolor sit amet. Kami sangat lorem ipsum dolor
-            sit amet. <br />
+            Search engine kami menggunakan metode cosine similarity untuk
+            melakukan temu balik informasi
             <br />
-            Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-            dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-            dolor sit amet lorem ipsum dolor sit amet.
+            <br />
+            Cosine similarity adalah ukuran kemiripan antara dua buah vektor
+            bukan nol dari ruang hasilkali dalam. Nilainya didefinisikan sebagai
+            kosinus sudut antara kedua vektor tersebut.
           </p>
         </div>
         <div className="column">
           <h2 className="head">How to Use</h2>
           <p className="content">
-            Cara menggunakan search engine ini adalah lorem ipsum dolor sit amet
-            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-            dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-            dolor sit amet lorem ipsum dolor sit amet.
+            Cara menggunakan search engine ini adalah navigasi ke home page,
+            lalu ketik search query pada kolom input. Tunggu beberapa saat, lalu
+            akan ditampilkan hasil pencarian diurutkan berdasarkan similaritas
+            mulai dari yang paling sesuai. Scroll kebawah untuk melihat term
+            table, dengan term yang berdasarkan dari search query. Klik judul
+            dokumen untuk melihat isi dokumen
             <br />
             <br />
-            Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-            dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-            lorem ipsum dolor sit amet.
+            Jika anda ingin menambahkan dokumen sebagai basis pencarian untuk
+            search engine, klik choose your file, lalu klik upload untuk
+            menambahkan dokumen
           </p>
         </div>
         <div className="column">

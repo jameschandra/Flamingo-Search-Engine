@@ -24,7 +24,7 @@ const FileUpload = (props) => {
       <div className="file-upload">
         <label className="file-upload-label">
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
-          Choose your file
+          {file ? file.name : "Choose your file"}
         </label>
         <button onClick={handleUpload}>Upload</button>
       </div>

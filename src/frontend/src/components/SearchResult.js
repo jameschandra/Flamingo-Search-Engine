@@ -6,14 +6,14 @@ import FileUpload from "./FileUpload";
 const SearchResult = (props) => {
   const { query, setQuery, data, handleSearch } = props.utils;
 
-  const getTerms = (arr) => {
-    Object.entries(data.docs[0].term_freq).forEach(([key]) => {
-      arr.push(key);
-    });
-    return arr;
-  };
+  // const getTerms = (arr) => {
+  //   Object.entries(data.docs[0].term_freq).forEach(([key]) => {
+  //     arr.push(key);
+  //   });
+  //   return arr;
+  // };
 
-  const terms = getTerms([]);
+  const terms = data.terms;
 
   return (
     <div>

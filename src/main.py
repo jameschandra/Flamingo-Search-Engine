@@ -19,6 +19,7 @@ CORS(app)
 def search_documents():
 
     query = request.get_json()["query"]
+    terms = clean_text(query)
     print(query)
 
     res = {
@@ -26,7 +27,8 @@ def search_documents():
         "query": {
             "input": query,
             "term_freq": []
-        }
+        },
+        "terms": terms
     }
 
     freq = term_freq([doc["content"] for doc in res["docs"]] + [query])
