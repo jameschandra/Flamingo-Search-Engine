@@ -47,14 +47,15 @@
 ## Setup
 
 ### Run the backend server :
-1. Install python and pip
-2. Open terminal / command prompt
-2. go to folder "src"
-3. pip install -r .\requirements.txt
-4. python .\main.py
+1. Install python ( https://www.python.org/downloads/ )
+2. Install pip ( https://phoenixnap.com/kb/install-pip-windows : windows, https://www.tecmint.com/install-pip-in-linux/ : linux, https://www.geeksforgeeks.org/how-to-install-pip-in-macos/ : mac )
+3. Open terminal / command prompt
+4. go to folder "src"
+5. pip install -r .\requirements.txt
+6. python .\main.py
 
 ### Run the frontend server :
-1. Install Node.js
+1. Install Node.js ( https://nodejs.org/en/download/ )
 2. go to folder "src/frontend"
 3. npm install
 4. npm start
